@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resource Sharing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Resource Sharing System</h1>
+        
+        <!-- Resource Submission Form -->
+        <form id="resource-form">
+
+            <label for="title">Resource Name</label>
+            <input type="text" id="title" name="title" placeholder="For example: Textbooks" required>
+
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" placeholder="Small Description for your Resource" required>
+
+        
+
+            <label for="type">Type</label>
+            <select id="type" name="type" required>
+                <option value="">Select Type</option>
+                <option value="Book">Book</option>
+                <option value="Notes">Notes</option>
+                <option value="PDF">PDF</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter Subject" required>
+
+            <label for="notes">Your Notes / Content</label>
+            <textarea id="notes" name="notes" placeholder="Enter your own notes here..." rows="4"></textarea>
+
+            <label for="contact">Submit By</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter Your Name" required>
+
+
+            <button type="submit">Add Resource</button>
+        </form>
+
+        <!-- Display Resources -->
+        <h2>Available Resources</h2>
+        <div id="resource-list">
+            <!-- Resources will load here dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
